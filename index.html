@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divyansh - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+      }
+
+      body {
+        background-color: rgb(2, 2, 47);
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        height: 100px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        background-color: rgb(2, 2, 36);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 25px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        font-size: 1.01rem;
+        color: rgb(74, 74, 226);
+      }
+
+      main hr {
+        border: 0;
+        background-color: rgb(63, 63, 157);
+        height: 0.09vh;
+        margin: 15px 30px;
+      }
+
+      .left {
+        font-size: 1.6rem;
+      }
+
+      .FirstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 50px 0;
+      }
+
+      .FirstSection > div {
+        width: 30%;
+      }
+
+      .LeftSection {
+        font-size: 2rem;
+      }
+
+      .LeftSection .btn {
+        padding: 12px;
+        background-color: rgb(8, 8, 57);
+        color: white;
+        border: 1px solid white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .RightSection img {
+        width: 300px;
+      }
+
+      .Name {
+        color: rgb(74, 74, 226);
+      }
+
+      #element {
+        color: rgb(74, 74, 226);
+      }
+
+      .text-gray {
+        color: gray;
+      }
+
+      .SecondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 110vh;
+      }
+
+      .SecondSection h1 {
+        font-size: 1.9rem;
+        margin-bottom: 35px;
+      }
+
+      .SecondSection .box {
+        background-color: white;
+        width: 81vw;
+        height: 2px;
+        margin: 56 0;
+        display: flex;
+      }
+
+      .SecondSection .vertical {
+        background-color: white;
+        height: 90px;
+        width: 1px;
+        margin: 0 130px;
+      }
+
+      .vertical .image-top {
+        width: 27px;
+        position: relative;
+        top: -30px;
+        left: -14px;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 71px;
+        width: 150px;
+      }
+
+      .vertical-desc {
+        position: relative;
+        top: 90px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+      }
+
+      .space {
+        margin: 50vh;
+      }
+
+      footer {
+        margin-top: 25vh;
+        background-color: rgb(6, 6, 52);
+      }
+
+      .footer {
+        display: flex;
+        padding: 4vh 50%;
+        justify-content: space-evenly;
+      }
+
+      footer ul {
+        list-style: none;
+      }
+
+      footer > div {
+        width: 0;
+      }
+
+      .RIGHTS {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: gray;
+      }
+
+      @media (max-width: 768px) {
+        .FirstSection {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .FirstSection > div {
+          width: 75%;
+        }
+
+        .LeftSection {
+          margin-bottom: 15px;
+        }
+
+        .RightSection img {
+          width: 50%;
+        }
+        nav {
+          flex-direction: column;
+        }
+        nav ul {
+          justify-content: center;
+        }
+        nav ul li a {
+          font-size: 13px;
+        }
+        .left {
+          text-align: center;
+        }
+
+        .right {
+          text-align: center;
+        }
+
+        nav ul li a:hover {
+          font-size: 0.8rem;
+        }
+      }
+
+      @media (max-width: 876px) {
+        nav {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 80px;
+        }
+        .left {
+          font-size: 1.5rem;
+        }
+        .right {
+          font-size: 1rem;
+        }
+      }
+
+      @media (max-width: 1130px) {
+        .SecondSection .box {
+          flex-wrap: wrap;
+        }
+
+        .SecondSection .vertical {
+          margin-bottom: 100px;
+        }
+        .space{
+          margin: 75vh;
+        }
+        .vertical .image-top {
+          position: relative;
+          top: 103px;
+        }
+
+        .vertical-title {
+          position: relative;
+          left: 20px;
+        }
+
+        .vertical-desc {
+          position: relative;
+          left: 20px;
+        }
+
+        .footer{
+          margin-top: 80vh;
+        }
+      }
+
+      @media (max-width: 1000px){
+        .space{
+          margin: 85vh;
+        }
+        .footer{
+          margin-top: 81vh;
+        }
+      }
+
+      @media (max-width: 691px){
+        .space{
+          margin: 130vh;
+        }
+        .footer{
+          margin-top: 185vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Divyansh's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/">ABOUT</a></li>
+            <li><a href="/">SERVICES</a></li>
+            <li><a href="/">PROJECTS</a></li>
+            <li><a href="/">CONTACT ME</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="FirstSection">
+        <div class="LeftSection">
+          Hi, My Name is <span class="Name">Divyansh</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">
+              <a
+                style="text-decoration: none; color: white"
+                href="RESUME.pdf"
+                download="DIVYANSH-RESUME"
+                >Download Resume</a
+              >
+            </button>
+            <button class="btn">
+              <a style="text-decoration: none; color: white" href="/"
+                >Linkedin</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="RightSection">
+          <img src="Graphic.png" alt="Devloper" />
+        </div>
+      </section>
+      <hr />
+      <section class="SecondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Training Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="html.png" alt="" />
+            <div class="vertical-title">HTML (APRIL 2023)</div>
+            <div class="vertical-desc">
+              HTML (Hypertext Markup Language) is a standard markup language
+              used to create and structure content on the web. It consists of
+              tags and elements that define the structure and presentation of
+              web pages, including text, images, links, and more. Browsers
+              interpret HTML to display web content to users.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="css.png" alt="" />
+            <div class="vertical-title">CSS (APRIL 2023)</div>
+            <div class="vertical-desc">
+              CSS is a stylesheet language used for describing the visual
+              presentation of web pages written in HTML. It defines how elements
+              should be displayed, including layout, colors, fonts, and more.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="js.png" alt="" />
+            <div class="vertical-title">JS (MAY 2023)</div>
+            <div class="vertical-desc">
+              JavaScript is a versatile scripting language used to add
+              interactivity and dynamic behavior to web pages. It allows for
+              client-side scripting and can manipulate web content and respond
+              to user actions.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="sql.png" alt="" />
+            <div class="vertical-title">SQL (MAY 2023)</div>
+            <div class="vertical-desc">
+              SQL is a programming language designed for managing and querying
+              relational databases. It's used to create, retrieve, update, and
+              delete data from databases and is essential for data-driven web
+              applications and systems.
+            </div>
+          </div>
+        </div>
+        <div class="space"></div>
+        <h1>Work Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="html.png" alt="" />
+            <div class="vertical-title">HTML (APRIL 2023)</div>
+            <div class="vertical-desc">
+              HTML (Hypertext Markup Language) is a standard markup language
+              used to create and structure content on the web. It consists of
+              tags and elements that define the structure and presentation of
+              web pages, including text, images, links, and more. Browsers
+              interpret HTML to display web content to users.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="css.png" alt="" />
+            <div class="vertical-title">CSS (APRIL 2023)</div>
+            <div class="vertical-desc">
+              CSS is a stylesheet language used for describing the visual
+              presentation of web pages written in HTML. It defines how elements
+              should be displayed, including layout, colors, fonts, and more.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="js.png" alt="" />
+            <div class="vertical-title">JS (MAY 2023)</div>
+            <div class="vertical-desc">
+              JavaScript is a versatile scripting language used to add
+              interactivity and dynamic behavior to web pages. It allows for
+              client-side scripting and can manipulate web content and respond
+              to user actions.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="sql.png" alt="" />
+            <div class="vertical-title">SQL (MAY 2023)</div>
+            <div class="vertical-desc">
+              SQL is a programming language designed for managing and querying
+              relational databases. It's used to create, retrieve, update, and
+              delete data from databases and is essential for data-driven web
+              applications and systems.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Footer Section</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Contacts</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Contacts</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Contacts</li>
+          </ul>
+        </div>
+      </div>
+      <span class="RIGHTS">Copyright &#169; | All Right Reserved</span>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Vedio Editor",
+          "Front-end Developer",
+          "Web Designer",
+          "Software Engineer",
+        ],
+        typeSpeed: 75,
+      });
+    </script>
+  </body>
+</html>
