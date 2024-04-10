@@ -1,130 +1,124 @@
 @media (max-width: 1130px) {
-    .SecondSection .box {
-      flex-wrap: wrap;
-      margin-left: 8px;
-    }
-
-    .SecondSection .vertical {
-      margin-bottom: 100px;
-    }
-    .space {
-      margin: 45vh;
-    }
-    .vertical .image-top {
-      position: relative;
-      top: 103px;
-    }
-
-    .vertical-title {
-      position: relative;
-      left: 20px;
-    }
-
-    .vertical-desc {
-      position: relative;
-      left: 20px;
-    }
-
-    .footer {
-      margin-top: 45vh;
-    }
+  .SecondSection {
+    height: 125vh;
+  }
+  .SecondSection .box {
+    flex-wrap: wrap;
   }
 
-  @media (max-width: 876px) {
-    nav {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 80px;
-    }
-    .left {
-      font-size: 1.5rem;
-    }
-    .right {
-      font-size: 1rem;
-    }
+  .SecondSection .vertical {
+    margin-bottom: 100px;
   }
 
-  
-  @media (max-width: 768px) {
-    .FirstSection {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    .FirstSection > div{
-        width: 50%;
-    }
-
-    .right { 
-      align-items: center;
-    } 
-
-    .RightSection img{
-        margin-top: 20px;
-    }
+  .vertical .image-top {
+    position: relative;
+    top: 103px;
   }
 
-
-  @media (max-width: 645px) {
-    .space {
-      margin: 80vh;
-    }
-    .footer {
-      margin-top: 115vh;
-    }
-    .RIGHTS {
-      margin-left: 10px;
-    }  
+  .space {
+    margin: 50vh;
   }
 
-  
-  @media (max-width: 600px) {
-    .left {
-        font-size: 1.3rem;
-    }
-
-    .right ul li a{
-        font-size: 0.8rem;
-    }
-
-    nav ul li a:hover {
-        font-size: 0.9rem;
-    }
+  .vertical-title {
+    position: relative;
+    left: 20px;
   }
 
-  @media (max-width: 550px) {
-    nav ul li {
-      margin: 0 15px;
-    }
+  .vertical-desc {
+    position: relative;
+    left: 20px;
+  }
+}
+
+@media (max-width: 950px) {
+  main hr,
+  .SecondSection {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 876px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+  .left {
+    font-size: 1.5rem;
+  }
+  .right {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .FirstSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
-  @media (max-width: 451px) {
-    nav ul li {
-      margin: 0 15px;
-    }
-
-    .RightSection img{
-      margin-left: -35px;
-    }
-
-    .footer{
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      justify-content: center;
-      gap:15px
-    }
-
-    .footer-first{
-      position: relative;
-      left: 40px;
-    }
-
-    .RIGHTS {
-      margin-left: 35px;
-    }
+  .FirstSection > div {
+    width: 50%;
   }
+
+  .right {
+    align-items: center;
+  }
+
+  .RightSection img {
+    margin-top: 20px;
+  }
+
+  .SecondSection {
+    text-align: center;
+  }
+
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+
+@media (max-width: 645px) {
+  .space {
+    margin: 95vh;
+  }
+  .SecondSection {
+    height: 215vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .left {
+    font-size: 1.3rem;
+  }
+
+  .right ul li a {
+    font-size: 0.8rem;
+  }
+
+  nav ul li a:hover {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 550px) {
+  nav ul li {
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 451px) {
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  .RightSection img {
+    width: 200px;
+}
+}
