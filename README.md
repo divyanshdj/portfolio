@@ -11,7 +11,7 @@
 "Explore my portfolio showcasing my work and skills. Get insights into my experience and projects. Let's connect and discuss collaboration opportunities!"
 
 <div align="center">
-<a href="https://divyanshdj.github.io/portfolio/"><strong>➥ Live Demo</strong></a>
+<a href="https://divyanshportfoilo.netlify.app/"><strong>➥ Live Demo</strong></a>
 </div>
 
 
