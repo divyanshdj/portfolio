@@ -950,6 +950,12 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .services__content {
+    box-shadow: none;
+}
+}
+
 /* For medium devices */
 @media screen and (min-width: 568px) {
   .home__content {
