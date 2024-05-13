@@ -156,3 +156,16 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+/*==================== HOME TYPED JS ====================*/
+var typed = new Typed("#element", {
+  strings: [
+    "Frontend developer", 
+    "React Js Developer",
+    "Web Developer", 
+    "Editor/Designer",
+    "Javascript Developer",
+    "MERN Stack Developer",
+    "Frontend developer"
+  ],
+  typeSpeed: 70,
+});
