@@ -395,7 +395,7 @@ img {
   display: inline-flex;
   align-items: center;
   transition: .3s;
-
+    border: transparent;
 }
 
 .button--small {
