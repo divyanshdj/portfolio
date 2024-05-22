@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
@@ -36,6 +37,12 @@
               <a href="#skills" class="nav__link">
                 <i class="uil uil-file-alt nav__icon"></i>
                 <p>Skills</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link">
+                <i class="uil uil-folder-open nav__icon"></i>
+                <p>Qualification</p>
               </a>
             </li>
             <li class="nav__item">
@@ -73,7 +80,7 @@
     <main class="main">
       <!--==================== HOME ====================-->
       <section class="home section" id="home">
-        <div class="home__container container grid">
+        <div data-aos="fade-up" class="home__container container grid">
           <div class="home__content grid">
             <div class="home__social">
               <a
@@ -161,10 +168,12 @@
       </section>
 
       <!--==================== ABOUT ====================-->
-      <section class="about section" id="about">
+      <section data-aos="fade-up"
+       class="about section" id="about">
         <h2 class="section__title">About Me</h2>
         <span class="section__subtitle">My introduction</span>
-        <div class="about__container container grid">
+        <div data-aos="fade-up"
+         class="about__container container grid">
           <img src="assets/img/about.png" alt="" class="about__img" />
 
           <div class="about__data">
@@ -217,11 +226,13 @@
       </section>
 
       <!--==================== SKILLS ====================-->
-      <section class="skills section" id="skills">
+      <section data-aos="fade-up"
+       class="skills section" id="skills">
         <h2 class="section__title">Skills</h2>
         <span class="section__subtitle">My technical level</span>
 
-        <div class="skills__container container grid">
+        <div data-aos="fade-up"
+         class="skills__container container grid">
           <div>
             <!--==================== SKILLS 1 ====================-->
             <div class="skills__content skills__open">
@@ -415,14 +426,16 @@
       </section>
 
       <!--==================== QUALIFICATION ====================-->
-      <section class="qualification section">
+      <section data-aos="fade-up"
+       class="qualification section" id="qualification">
         <h2 class="section__title">
           Qualification
         </h2>
         <span class="section__subtitle"
           >My personal journey</span
         >
-        <div class="qualification__container container">
+        <div data-aos="fade-up"
+         class="qualification__container container">
           <div class="qualification__tabs">
             <div
               class="qualification__button button--flex qualification__active"
@@ -597,7 +610,8 @@
       </section>
 
       <!--==================== PORTFOLIO ====================-->
-      <section class="portfolio section" id="portfolio">
+      <section data-aos="fade-up"
+       class="portfolio section" id="portfolio">
         <h2 class="section__title">Portfolio</h2>
         <span class="section__subtitle"
           >Most recent projects</span
@@ -764,11 +778,13 @@
       </section>
 
             <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
+            <section data-aos="fade-up"
+             class="services section" id="services">
               <h2 class="section__title">Services</h2>
               <span class="section__subtitle">What I offer</span>
       
-              <div class="services__container container grid">
+              <div data-aos="fade-up"
+               class="services__container container grid">
                 <!--==================== SERVICES 1 ====================-->
                 <div class="services__content">
                   <div>
@@ -808,12 +824,21 @@
             </section>
 
       <!--==================== CONTACT ME ====================-->
-      <section class="contact section" id="contact">
+      <section data-aos="fade-up"
+       class="contact section" id="contact">
         <h2 class="section__title">Contact Me</h2>
         <span class="section__subtitle">Get in touch</span>
 
-        <div class="contact__container container grid">
+        <div data-aos="fade-up" class="contact__container container grid">
           <div>
+            <div class="contact__information">
+              <i class="uil uil-github contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Github</h3>
+                <a class="contact__subtitle" href="http://github.com/divyanshdj" target="_blank">github.com/divyanshdj</a>
+              </div>
+            </div>
+
             <div class="contact__information">
               <i class="uil uil-phone contact__icon"></i>
               <div>
@@ -926,6 +951,10 @@
       <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/iconfont.js"></script>
